@@ -19,7 +19,6 @@
 class DropboxLinks
 {
 	protected $subFolders;
-	protected $box;
 	
 	/**
 	 * Constructor
@@ -28,9 +27,6 @@ class DropboxLinks
 	{
 		// set all sub folders
 		$this->subFolders = $this->getLinks($mainurl,'?dl=0');
-		
-		// make sure box is a object
-		$this->box = new stdClass();
 		
 		// start building the json files
 		$this->start();
